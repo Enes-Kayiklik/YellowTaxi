@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "29257348731",
+    "firebase_url": "https://kuizz-app.firebaseio.com",
+    "project_id": "kuizz-app",
+    "storage_bucket": "kuizz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29257348731:android:6a6e93708bc528c4f9d4de",
+        "android_client_info": {
+          "package_name": "com.eneskayiklik.yellowtaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29257348731-ug2bj74sgimva41sliq50mm8bkquu7j2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eneskayiklik.yellowtaxi",
+            "certificate_hash": "7f0baa5975939d57004730979326d5ba64b87b3d"
+          }
+        },
+        {
+          "client_id": "29257348731-ol6rahhe2pdtebnmbf2leifhmi4arnag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxJ9WLDqfJdPAWILcLWb8bXi9LWIJ9F18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29257348731-ol6rahhe2pdtebnmbf2leifhmi4arnag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.eneskayiklik.yellowtaxi.ui.main.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.eneskayiklik.yellowtaxi.ui.main.list.ListFragment"
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_dayFragment"
+            app:destination="@id/dayFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.eneskayiklik.yellowtaxi.ui.main.list.DayFragment"
+        android:label="DayFragment" >
+        <action
+            android:id="@+id/action_dayFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.eneskayiklik.yellowtaxi.ui.main.map.MapFragment"
+        android:label="MapFragment" >
+        <argument
+            android:name="start"
+            app:argType="com.eneskayiklik.yellowtaxi.network.model.ZoneDataModel"
+            app:nullable="true" />
+        <argument
+            android:name="end"
+            app:argType="com.eneskayiklik.yellowtaxi.network.model.ZoneDataModel"
+            app:nullable="true" />
+    </fragment>
+</navigation>
